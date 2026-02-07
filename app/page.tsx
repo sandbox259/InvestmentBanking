@@ -47,81 +47,133 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* What We Do Section */}
       <section className="bg-[#F8F6F2] py-16 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F1E3F] mb-4">
-              What We Do
-            </h2>
-            <div className="h-1 w-16 bg-[#CDAA80] mx-auto"></div>
-          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-20 md:space-y-24">
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
-            {[
-              {
-                title: 'Investment Banking',
-                description: 'Comprehensive advisory for mergers, acquisitions, and capital structuring.',
-              },
-              {
-                title: 'Capital Raising',
-                description: 'Strategic guidance in equity, debt, and alternative capital sourcing.',
-              },
-              {
-                title: 'Corporate Advisory',
-                description: 'End-to-end support for business transformation and strategic growth.',
-              },
-            ].map((item, i) => (
-              <Card
-                key={i}
-                className="bg-white p-6 md:p-8 border-[#E5E2DC] hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-heading text-xl md:text-2xl font-bold text-[#0F1E3F] mb-4">
-                  {item.title}
-                </h3>
-                <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
-                  {item.description}
+            {/* Our Purpose */}
+            <div className="bg-white p-10 md:p-12 rounded-lg border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
+              <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
+                Our Purpose
+              </h2>
+              <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
+
+              <div className="max-w-4xl space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+                <p>
+                  Significant value lies hidden in underappreciated MSMEs, industrial
+                  clusters, and family-run enterprises. These businesses have strong
+                  fundamentals but limited access to institutional capital and
+                  operational expertise.
                 </p>
-              </Card>
-            ))}
-          </div>
 
-          {/* Section 2: Our Belief */}
-          <div className="mb-20 bg-white p-12 rounded-lg border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
-            <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
-              Our Belief
-            </h2>
-            <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
-            <div className="space-y-6 text-[#1A1A1A] text-base leading-relaxed">
-              <p className="mb-6">
-                Significant value lies hidden in underappreciated MSMEs, industrial clusters, and family-run enterprises. These businesses have strong fundamentals but limited access to institutional capital and operational expertise.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <span>Profitable and cash-generative, yet flying below institutional radar</span>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <span>Run by capable founders who built strong businesses but lack capital for the next phase of growth</span>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <span>Poised to scale rapidly with the right capital partner and structured approach</span>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>Profitable and cash-generative, yet flying below institutional radar</span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Run by capable founders who built strong businesses but lack
+                      capital for the next phase of growth
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Poised to scale rapidly with the right capital partner and
+                      structured approach
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* What We Do Image Placeholder */}
-          {/* <div className="relative w-full h-72 md:h-96 rounded-lg overflow-hidden border border-[#CDAA80] border-opacity-40 shadow-lg">
-            <Image
-              src="/coinsuws.jpg"
-              alt="Business architecture and global markets"
-              fill
-              className="object-cover"
-            />
-          </div> */}
+            {/* What We Do */}
+            <div>
+              <div className="text-center mb-12 md:mb-16">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F1E3F] mb-4">
+                  What We Do
+                </h2>
+                <div className="h-1 w-16 bg-[#CDAA80] mx-auto"></div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+                {[
+                  {
+                    title: 'Investment Banking',
+                    description:
+                      'Comprehensive advisory for mergers, acquisitions, and capital structuring.',
+                  },
+                  {
+                    title: 'Capital Raising',
+                    description:
+                      'Strategic guidance in equity, debt, and alternative capital sourcing.',
+                  },
+                  {
+                    title: 'Corporate Advisory',
+                    description:
+                      'End-to-end support for business transformation and strategic growth.',
+                  },
+                ].map((item, i) => (
+                  <Card
+                    key={i}
+                    className="bg-white p-6 md:p-8 border-[#E5E2DC] hover:shadow-lg transition-shadow"
+                  >
+                    <h3 className="font-heading text-xl md:text-2xl font-bold text-[#0F1E3F] mb-4">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
+                      {item.description}
+                    </p>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Our Belief */}
+            <div className="bg-white p-10 md:p-12 rounded-lg border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
+              <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
+                Our Belief
+              </h2>
+              <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
+
+              <div className="space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+                <p>
+                  By working with high standards, we have earned the trust of our
+                  clients and regulators. Trust is something we actively protect
+                  through ethical conduct, clear communication, and accountability.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Operating with rigor across applicable laws, regulatory
+                      requirements, and professional standards
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Guided by a long-term view of value creation, balancing the
+                      interests of founders, investors, and teams
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Focused on delivering tangible, measurable, and attributable
+                      impact
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -164,11 +216,15 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-sm md:text-base mb-4">Connect</h4>
+              <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
               <p className="text-gray-400 text-xs md:text-sm">
-                <Link href="/contact" className="hover:text-[#CDAA80] transition-colors">
-                  contact@unitywealthsolutions.com
-                </Link>
+                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
+                  info@unitywealthsolutions.com
+                </a>
+
+                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
+                  +91 79773 72974
+                </a>
               </p>
             </div>
           </div>

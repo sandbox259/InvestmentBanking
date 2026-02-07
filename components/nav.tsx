@@ -23,7 +23,7 @@ export function Nav() {
           <Image
             src="/logo.jpeg"
             alt="UWS"
-            width={120}
+            width={180}
             height={40}
             priority
           />

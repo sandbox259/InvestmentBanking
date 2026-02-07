@@ -278,12 +278,20 @@ export default function Services() {
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-sm md:text-base mb-4">Connect</h4>
-              <p className="text-gray-400 text-xs md:text-sm"><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">contact@unitywealthsolutions.com</Link></p>
+              <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
+              <p className="text-gray-400 text-xs md:text-sm">
+                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
+                  info@unitywealthsolutions.com
+                </a>
+
+                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
+                  +91 79773 72974
+                </a>
+              </p>
             </div>
           </div>
           <div className="border-t border-[#213A56] pt-8">
-            <p className="text-center text-gray-500 text-xs md:text-sm">© 2024 Unity Wealth Solutions. All rights reserved.</p>
+            <p className="text-center text-gray-500 text-xs md:text-sm">© 2026 Unity Wealth Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

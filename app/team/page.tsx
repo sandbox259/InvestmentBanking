@@ -60,13 +60,13 @@ export default function Team() {
               <div key={index}>
                 <Card className="bg-white border-[#E5E2DC] overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
                   {/* Profile Image Placeholder */}
-                  <div className="w-full h-80 bg-gradient-to-br from-[#213A56] to-[#0F1E3F] flex items-center justify-center border-b border-[#E5E2DC]">
+                  {/* <div className="w-full h-80 bg-gradient-to-br from-[#213A56] to-[#0F1E3F] flex items-center justify-center border-b border-[#E5E2DC]">
                     <div className="text-center">
                       <div className="text-[#CDAA80] text-6xl mb-3">👤</div>
                       <p className="text-gray-300">Profile Image</p>
                       <p className="text-gray-400 text-sm">(High-quality headshot)</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Profile Info */}
                   <div className="p-8 flex flex-col flex-1">
@@ -194,12 +194,20 @@ export default function Team() {
               </ul>
             </div>
             <div>
-              <h4 className="font-medium mb-4">Connect</h4>
-              <p className="text-gray-400 text-sm"><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">contact@unitywealthsolutions.com</Link></p>
+              <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
+              <p className="text-gray-400 text-xs md:text-sm">
+                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
+                  info@unitywealthsolutions.com
+                </a>
+
+                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
+                  +91 79773 72974
+                </a>
+              </p>
             </div>
           </div>
           <div className="border-t border-[#213A56] pt-8">
-            <p className="text-center text-gray-500 text-sm">© 2024 Unity Wealth Solutions. All rights reserved.</p>
+            <p className="text-center text-gray-500 text-sm">© 2026 Unity Wealth Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

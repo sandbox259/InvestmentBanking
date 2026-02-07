@@ -24,6 +24,43 @@ export default function Philosophy() {
       <section className="bg-[#F8F6F2] py-20 md:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
+          <div className = "mb-20">
+              <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
+                Entrepreneur's Take
+              </h2>
+              <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
+
+              <div className="max-w-4xl space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+                <p>
+                  Building a business is tough. A lengthy journey demanding patience, resilience, clear vision, and sacrifices.
+                  Success comes from perseverance through adversity, learning from failures, focusing on core
+                  values, and building strong foundations like a team and customer base.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>We respect what founders have created and approach every partnership with the intent of longterm sustainability.</span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      Before any investment, we take time to understand the values, culture, and long-term vision behind the company. 
+                      We aim to be steady and constructive partners, especially in tough times.
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
+                    <span>
+                      We also believe capital raising should not distract management from running the business.
+                      Our process is designed to be efficient, transparent, and fair focused on reaching terms quickly
+                      and creating outcomes that work for both investors and founders.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
          {/* Section 1: India as Opportunity */}
           <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -176,12 +213,20 @@ export default function Philosophy() {
               </ul>
             </div>
             <div>
-              <h4 className="font-medium mb-4">Connect</h4>
-              <p className="text-gray-400 text-sm"><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">contact@unitywealthsolutions.com</Link></p>
+              <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
+              <p className="text-gray-400 text-xs md:text-sm">
+                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
+                  info@unitywealthsolutions.com
+                </a>
+
+                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
+                  +91 79773 72974
+                </a>
+              </p>
             </div>
           </div>
           <div className="border-t border-[#213A56] pt-8">
-            <p className="text-center text-gray-500 text-sm">© 2024 Unity Wealth Solutions. All rights reserved.</p>
+            <p className="text-center text-gray-500 text-sm">© 2026 Unity Wealth Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

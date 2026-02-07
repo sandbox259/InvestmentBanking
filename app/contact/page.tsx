@@ -154,8 +154,8 @@ export default function Contact() {
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-gradient-to-br from-[#0F1E3F] to-[#213A56] rounded-lg p-8 text-white border border-[#CDAA80] border-opacity-30 hover:shadow-lg transition-shadow">
               <h3 className="font-heading text-lg font-bold mb-3">Email</h3>
-              <a href="mailto:contact@unitywealthsolutions.com" className="text-gray-300 hover:text-[#CDAA80] transition-colors text-sm md:text-base font-medium break-all">
-                contact@unitywealthsolutions.com
+              <a href="mailto:info@unitywealthsolutions.com" className="text-gray-300 hover:text-[#CDAA80] transition-colors text-sm md:text-base font-medium break-all">
+                info@unitywealthsolutions.com
               </a>
             </div>
 
@@ -234,14 +234,18 @@ export default function Contact() {
             <div>
               <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
               <p className="text-gray-400 text-xs md:text-sm">
-                <a href="mailto:contact@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
-                  contact@unitywealthsolutions.com
+                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
+                  info@unitywealthsolutions.com
+                </a>
+
+                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
+                  +91 79773 72974
                 </a>
               </p>
             </div>
           </div>
           <div className="border-t border-[#213A56] pt-8">
-            <p className="text-center text-gray-500 text-xs md:text-sm">© 2024 Unity Wealth Solutions. All rights reserved.</p>
+            <p className="text-center text-gray-500 text-xs md:text-sm">© 2026 Unity Wealth Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>
