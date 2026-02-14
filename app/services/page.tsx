@@ -57,7 +57,7 @@ export default function Services() {
 
       {/* Services Accordion */}
       <section className="bg-[#F8F6F2] py-16 md:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#0F1E3F] mb-4">
               Service Offerings
@@ -274,6 +274,7 @@ export default function Services() {
                 <li><Link href="/about" className="hover:text-[#CDAA80] transition-colors">About</Link></li>
                 <li><Link href="/philosophy" className="hover:text-[#CDAA80] transition-colors">Philosophy</Link></li>
                 <li><Link href="/team" className="hover:text-[#CDAA80] transition-colors">Team</Link></li>
+                <li><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>

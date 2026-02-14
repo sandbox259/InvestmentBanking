@@ -247,6 +247,7 @@ export default function About() {
                 <li><Link href="/services" className="hover:text-[#CDAA80] transition-colors">Services</Link></li>
                 <li><Link href="/philosophy" className="hover:text-[#CDAA80] transition-colors">Philosophy</Link></li>
                 <li><Link href="/team" className="hover:text-[#CDAA80] transition-colors">Team</Link></li>
+                <li><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>

@@ -210,6 +210,7 @@ export default function Philosophy() {
                 <li><Link href="/about" className="hover:text-[#CDAA80] transition-colors">About</Link></li>
                 <li><Link href="/services" className="hover:text-[#CDAA80] transition-colors">Services</Link></li>
                 <li><Link href="/team" className="hover:text-[#CDAA80] transition-colors">Team</Link></li>
+                <li><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
