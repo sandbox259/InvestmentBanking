@@ -46,7 +46,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <section className="bg-[#F8F6F2] py-16 md:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Before You Reach Out Card - MOVED TO TOP */}
           <div className="mb-12 md:mb-16 bg-white rounded-lg p-8 md:p-12 border border-[#E5E2DC]">
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-[#0F1E3F] mb-8">
@@ -178,7 +178,7 @@ export default function Contact() {
 
       {/* Trust Section */}
       <section className="bg-white py-20 md:py-32 border-t border-[#E5E2DC]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-3xl font-bold text-[#0F1E3F] mb-6">
             Why Reach Out to Us?
           </h2>

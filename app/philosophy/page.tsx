@@ -22,15 +22,15 @@ export default function Philosophy() {
 
       {/* Content Sections */}
       <section className="bg-[#F8F6F2] py-20 md:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className = "mb-20">
               <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
-                Entrepreneur's Take
+                We know what it takes to be an Entrepreneur
               </h2>
               <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
 
-              <div className="max-w-4xl space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+              <div className="max-w-7xl space-y-6 text-[#1A1A1A] text-base leading-relaxed">
                 <p>
                   Building a business is tough. A lengthy journey demanding patience, resilience, clear vision, and sacrifices.
                   Success comes from perseverance through adversity, learning from failures, focusing on core
@@ -130,7 +130,7 @@ export default function Philosophy() {
           </div> */}
 
           {/* Section 3: Our Philosophy */}
-          <div className="mb-20">
+          <div className="mb-8">
             <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
               Our Philosophy
             </h2>
@@ -181,8 +181,8 @@ export default function Philosophy() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 border-t border-[#E5E2DC]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="bg-white py-12 border-t border-[#E5E2DC]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-3xl font-bold text-[#0F1E3F] mb-6">
             Want to explore how we can partner with you?
           </h2>

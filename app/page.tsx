@@ -26,7 +26,7 @@ export default function Home() {
                 Connecting ambition to capital.
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-8 md:mb-12 leading-relaxed">
-                We partner with founders, investors, and institutions to turn strong businesses into scalable, long-term enterprises.
+               Since day one , we have focused on one thing. Helping strong businesses to grow. We work with founders, Investors and institutions to turn potential into scale. Not just transactions, a partnership that compounds over time. 
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link

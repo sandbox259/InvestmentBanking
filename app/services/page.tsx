@@ -171,8 +171,7 @@ export default function Services() {
           <div className="mt-12 bg-gradient-to-r from-[#F8F6F2] to-[#E5E2DC] rounded-lg p-8 md:p-12 border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
             <h3 className="font-heading text-lg font-bold text-[#0F1E3F] mb-4 text-center">How We Guide Your Journey</h3>
             <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center">
-              Each engagement follows a structured approach: We begin with thorough preparation, move through investor meetings and term sheet negotiation, conduct comprehensive due diligence, manage conditions precedent, and guide you to successful closing. Throughout, we serve as your trusted advisor and advocate.
-            </p>
+              We help growth-stage companies raise capital from sovereign wealth fucnds , private equity firms single and multi-family offices, and other institutional investors to fund expansion, new capacity, and strategic initiatives. Our role is to prepare businesses for investment, connect them with the right long-term partners, and manage the process from first discussion to closing. The focus is always on building the right fir between the company and the investors.</p>
           </div>
         </div>
       </section>

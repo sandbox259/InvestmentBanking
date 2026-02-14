@@ -1,6 +1,7 @@
 import { Nav } from '@/components/nav'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from  'next/image'
 
 export const metadata = {
   title: 'About Us | Unity Wealth Solutions',
@@ -23,60 +24,46 @@ export default function About() {
       {/* Main Content */}
       <section className="bg-[#F8F6F2] py-16 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Our Mission - Premium Card Section */}
-          <div className="mb-16 md:mb-20 bg-white rounded-lg p-8 md:p-12 border border-[#E5E2DC] shadow-lg">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#0F1E3F] mb-8">
-              Our Mission
+          {/* About UWS- Premium Card Section */}
+
+          
+            <div className="mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+           {/* LEFT: Text */}
+           <div>
+            <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
+              About UWS
             </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-              {/* Mission Points */}
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <div>
-                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">Growth Through Partnership</h3>
-                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
-                      Since day one, we have focused on one thing: helping strong businesses grow through meaningful partnerships.
-                    </p>
-                  </div>
-                </div>
+            <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
 
-                <div className="flex gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <div>
-                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">From Potential to Scale</h3>
-                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
-                      We work with founders, investors, and institutions to turn potential into scale with structured advisory.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
-                  <div>
-                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">Partnerships That Compound</h3>
-                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
-                      Not just transactions—partnerships built on trust, expertise, and an unwavering commitment to value creation.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Value Proposition */}
-              <div className="bg-gradient-to-br from-[#0F1E3F] to-[#213A56] rounded-lg p-8 text-white flex flex-col justify-between">
-                <div>
-                  <h3 className="font-heading text-2xl font-bold mb-6">Our Approach</h3>
-                  <p className="text-gray-200 text-sm md:text-base leading-relaxed mb-6">
-                    Grounded in deep market knowledge, regulatory expertise, and an unwavering commitment to creating sustainable value for all stakeholders.
-                  </p>
-                </div>
-                <div className="pt-6 border-t border-[#CDAA80] border-opacity-40">
-                  <p className="text-[#CDAA80] font-semibold text-sm">Building lasting enterprises that compound over decades.</p>
-                </div>
-              </div>
+            <div className="space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+              <p>
+                UWS is engaged in investment banking activities of fundraising and corporate advisory.
+              </p>
+              <p>
+                UWS has built a nationwide sourcing network, systematically engaging with businesses across india, including in undeserved and emrging across India, including in undeserved and emerging inducstrial regions through deep coverage of industrial cluster , we identify high quality niche enterprises with strong growth potential.
+              </p>
             </div>
           </div>
+
+          {/* RIGHT: Image */}
+          <div>
+            <div className="relative w-full h-80 lg:h-96 rounded-lg overflow-hidden border-2 border-[#CDAA80]">
+              <Image
+                src="/Aboutus.jpeg"
+                alt="About us"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+          
 
           {/* Values Grid */}
           <div className="mb-16 md:mb-20">
@@ -114,7 +101,7 @@ export default function About() {
           </div>
 
           {/* Experience Section */}
-          <div className="bg-white rounded-lg p-8 md:p-12 border border-[#E5E2DC]">
+          {/* <div className="bg-white rounded-lg p-8 md:p-12 border border-[#E5E2DC]">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-[#0F1E3F] mb-8">
               Our Expertise
             </h2>
@@ -166,9 +153,69 @@ export default function About() {
                 </ul>
               </div>
             </div>
+          </div> */}
+
+            {/* Mission*/ }
+          <div className="mb-16 md:mb-20 bg-white rounded-lg p-8 md:p-12 border border-[#E5E2DC] shadow-lg">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#0F1E3F] mb-8">
+              Our Mission
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+              {/* Mission Points */}
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">Growth Through Partnership</h3>
+                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
+                      Since day one, we have focused on one thing: helping strong businesses grow through meaningful partnerships.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">From Potential to Scale</h3>
+                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
+                      We work with founders, investors, and institutions to turn potential into scale with structured advisory.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="text-[#CDAA80] font-bold text-xl min-w-fit mt-1">●</span>
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-[#213A56] mb-2">Partnerships That Compound</h3>
+                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
+                      Not just transactions—partnerships built on trust, expertise, and an unwavering commitment to value creation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Value Proposition */}
+              <div className="bg-gradient-to-br from-[#0F1E3F] to-[#213A56] rounded-lg p-8 text-white flex flex-col justify-between">
+                <div>
+                  <h3 className="font-heading text-2xl font-bold mb-6">Our Approach</h3>
+                  <p className="text-gray-200 text-sm md:text-base leading-relaxed mb-6">
+                   Unity Wealth Solutions operates as a long term partner to both sides of the table.
+                  </p>
+                  <p className="text-gray-200 text-sm md:text-base leading-relaxed mb-6">
+                    For founders, we bring structure, preparation, and clarity before capital is raised. For investors, we provide access to carefully filtered opportunities supported by on ground diligence and realistic underwriting.
+                  </p>
+                </div>
+                <div className="pt-6 border-t border-[#CDAA80] border-opacity-40">
+                  <p className="text-[#CDAA80] font-semibold text-sm">Our role is to reduce information gaps , align expectations, and ensure capital is deployed where it can compound.</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+
+
+     </div>
+      </section> 
 
       {/* CTA */}
       <section className="bg-[#0F1E3F] text-white py-12 md:py-20">

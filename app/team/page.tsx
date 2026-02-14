@@ -10,8 +10,8 @@ export const metadata = {
 export default function Team() {
   const team = [
     {
-      name: 'Dikshit',
-      role: 'Principal',
+      name: 'Raunak Mishra & Dixit Kumar',
+      role: 'Co-Founders',
       bio: 'Brings two decades of investment banking and M&A experience. Known for founder-aligned thinking, practical structuring expertise, and an uncompromising focus on transaction outcomes. Dikshit has led over 50+ transactions across diverse sectors and has deep relationships with institutional capital sources.',
       focus: [
         'Transaction experience',
@@ -19,18 +19,18 @@ export default function Team() {
         'Practical judgment',
         'M&A expertise',
       ],
-    },
-    {
-      name: 'Raunak',
-      role: 'Principal',
-      bio: 'Specialist in financial structuring, regulatory advisory, and long-term partnership building. Raunak combines rigorous analytical capabilities with a deep understanding of the regulatory landscape. His approach ensures transactions are not just profitable, but sustainable and compliant.',
-      focus: [
-        'Advisory expertise',
-        'Structuring skills',
-        'Long-term partnerships',
-        'Regulatory knowledge',
-      ],
-    },
+    }
+    // {
+    //   name: 'Raunak',
+    //   role: 'Principal',
+    //   bio: 'Specialist in financial structuring, regulatory advisory, and long-term partnership building. Raunak combines rigorous analytical capabilities with a deep understanding of the regulatory landscape. His approach ensures transactions are not just profitable, but sustainable and compliant.',
+    //   focus: [
+    //     'Advisory expertise',
+    //     'Structuring skills',
+    //     'Long-term partnerships',
+    //     'Regulatory knowledge',
+    //   ],
+    // },
   ]
 
   return (
@@ -55,7 +55,7 @@ export default function Team() {
             <div className="h-1 w-16 bg-[#CDAA80] mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-1 gap-12">
             {team.map((member, index) => (
               <div key={index}>
                 <Card className="bg-white border-[#E5E2DC] overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
@@ -77,10 +77,26 @@ export default function Team() {
                       {member.role}
                     </p>
                     <p className="text-[#1A1A1A] text-base leading-relaxed mb-8">
-                      {member.bio}
+                      We started our journey working deeply with numbers - financial models, projections, valuations, the usuals. But experience quickly taught us that finance is, at its core, about human decisions: the difficult choices founders confront when the path forward is uncertain and the stakes are high.
                     </p>
 
-                    <div className="mt-auto">
+                    <p className="text-[#1A1A1A] text-base leading-relaxed mb-8">
+                      We have worked closely with many kinds of entrepreneurs - first time founders taking their first institutional cheque with both excitement and nervousness, MSME promoters who have spent years managing tight working capitalcycles, and business families now thinking about scaling up professionally without losing what they built over generations. 
+                    </p>
+
+                    <p className="text-[#1A1A1A] text-base leading-relaxed mb-8">
+                      What we bring to the table is not theory, but practical judgement built from being part of real transactions and real situations. Our focus is on preparing businesses in a way that long-term investors truly undrestand and support.
+                    </p>
+
+                    <p className="text-[#1A1A1A] text-base leading-relaxed mb-8">
+                      We spend a lot of time on getting structures right, aligning expectations, and making sure founders, management, and investors are working in the same direction.
+                    </p>
+
+                    <p className="text=[#1A1A1A] test-base leading-relaxed mb-8">
+                    We also believe the transaction process should not distract management from running the business. A good process should be clean, efficient, and respectful of the management's and investor's time - so the team can stay focused on execution.
+                    </p>
+
+                    {/* <div className="mt-auto">
                       <p className="text-[#0F1E3F] font-heading font-bold text-sm mb-4">
                         Focus Areas
                       </p>
@@ -94,7 +110,7 @@ export default function Team() {
                           </span>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </Card>
               </div>
