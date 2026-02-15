@@ -1,240 +1,210 @@
-import { Nav } from '@/components/nav'
-import { Card } from '@/components/ui/card'
-import Link from 'next/link'
-import Image from 'next/image'
+'use client'
+import { Nav } from "@/components/nav"
+import Link from "next/link"
+import Image from "next/image"
+import FadeIn from "@/components/FadeIn"
 
 export default function Home() {
   return (
     <div>
-      <Nav />
 
-      {/* Hero Section */}
-      <section className="relative text-white py-16 md:py-28 overflow-hidden min-h-[500px] md:min-h-[600px]">
+      {/* HERO */}
+      <section className="relative text-white min-h-[70vh] md:min-h-[85vh] flex items-center overflow-hidden">
+
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-right-bottom md:bg-top bg-no-repeat"
-          style={{backgroundImage: 'url(/uwshome2.jpeg)'}}
-        />
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F1E3F] via-[#0F1E3F]/75 md:via-[#0F1E3F]/60 to-transparent" />
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="max-w-2xl">
-            {/* Left Column */}
-            <div>
-              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-                Connecting ambition to capital.
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-8 md:mb-12 leading-relaxed">
-               Since day one , we have focused on one thing. Helping strong businesses to grow. We work with founders, Investors and institutions to turn potential into scale. Not just transactions, a partnership that compounds over time. 
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/contact"
-                  className="px-6 md:px-8 py-2.5 md:py-3 bg-[#CDAA80] text-[#0F1E3F] font-medium text-sm md:text-base hover:bg-[#997953] transition-colors text-center"
-                >
-                  Get in Touch
-                </Link>
-                <Link
-                  href="/services"
-                  className="px-6 md:px-8 py-2.5 md:py-3 border border-white text-white font-medium text-sm md:text-base hover:bg-white hover:text-[#0F1E3F] transition-colors text-center"
-                >
-                  Explore Services
-                </Link>
-              </div>
+        <div className="absolute inset-0">
+          <Image
+            src="/uwshome2.jpeg"
+            alt="Financial district skyline"
+            fill
+            priority
+            className="object-cover object-top md:object-[center_15%]"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F1E3F] via-[#0F1E3F]/90 to-[#0F1E3F]/40" />
+
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-6 md:mb-8">
+              Connecting ambition to capital.
+            </h1>
+
+            <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mb-10 md:mb-12">
+              We partner with founders, investors, and institutions to unlock enduring growth.
+              Not transactions — structured capital partnerships designed to scale with discipline.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <Link
+                href="/contact"
+                className="px-8 py-3 bg-[#CDAA80] text-[#0F1E3F] font-medium hover:bg-[#997953] transition-colors text-center"
+              >
+                Start a Conversation
+              </Link>
+
+              <Link
+                href="/services"
+                className="px-8 py-3 border border-white text-white hover:bg-white hover:text-[#0F1E3F] transition-colors text-center"
+              >
+                Our Services
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-
-      {/* What We Do Section */}
+      {/* PURPOSE */}
       <section className="bg-[#F8F6F2] py-16 md:py-28">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-20 md:space-y-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
 
-            {/* Our Purpose */}
-            <div className="bg-white p-10 md:p-12 rounded-lg border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
-              <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
+            {/* TEXT */}
+            <FadeIn>
+            <div>
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0F1E3F] tracking-tight mb-8 md:mb-10">
                 Our Purpose
               </h2>
-              <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
 
-              <div className="max-w-4xl space-y-6 text-[#1A1A1A] text-base leading-relaxed">
+              <p className="text-[#0F1E3F] font-semibold mb-5 md:mb-6">
+                Help strong businesses scale — without losing what made them strong.
+              </p>
+
+              <div className="space-y-5 md:space-y-6 text-[#1A1A1A] leading-relaxed max-w-xl">
                 <p>
-                  Significant value lies hidden in underappreciated MSMEs, industrial
-                  clusters, and family-run enterprises. These businesses have strong
-                  fundamentals but limited access to institutional capital and
-                  operational expertise.
+                  Significant value lies within underappreciated MSMEs, industrial clusters,
+                  and founder-led enterprises with solid fundamentals but limited access to
+                  institutional capital.
                 </p>
 
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>Profitable and cash-generative, yet flying below institutional radar</span>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>
-                      Run by capable founders who built strong businesses but lack
-                      capital for the next phase of growth
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>
-                      Poised to scale rapidly with the right capital partner and
-                      structured approach
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* What We Do */}
-            <div>
-              <div className="text-center mb-12 md:mb-16">
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F1E3F] mb-4">
-                  What We Do
-                </h2>
-                <div className="h-1 w-16 bg-[#CDAA80] mx-auto"></div>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                {[
-                  {
-                    title: 'Investment Banking',
-                    description:
-                      'Comprehensive advisory for mergers, acquisitions, and capital structuring.',
-                  },
-                  {
-                    title: 'Capital Raising',
-                    description:
-                      'Strategic guidance in equity, debt, and alternative capital sourcing.',
-                  },
-                  {
-                    title: 'Corporate Advisory',
-                    description:
-                      'End-to-end support for business transformation and strategic growth.',
-                  },
-                ].map((item, i) => (
-                  <Card
-                    key={i}
-                    className="bg-white p-6 md:p-8 border-[#E5E2DC] hover:shadow-lg transition-shadow"
-                  >
-                    <h3 className="font-heading text-xl md:text-2xl font-bold text-[#0F1E3F] mb-4">
-                      {item.title}
-                    </h3>
-                    <p className="text-[#1A1A1A] text-sm md:text-base leading-relaxed">
-                      {item.description}
-                    </p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* Our Belief */}
-            <div className="bg-white p-10 md:p-12 rounded-lg border border-[#E5E2DC] border-l-4 border-l-[#CDAA80]">
-              <h2 className="font-heading text-4xl font-bold text-[#0F1E3F] mb-6">
-                Our Belief
-              </h2>
-              <div className="h-1 w-12 bg-[#CDAA80] mb-8"></div>
-
-              <div className="space-y-6 text-[#1A1A1A] text-base leading-relaxed">
                 <p>
-                  By working with high standards, we have earned the trust of our
-                  clients and regulators. Trust is something we actively protect
-                  through ethical conduct, clear communication, and accountability.
+                  With disciplined structuring and aligned capital partners, these
+                  businesses can transition into enduring, scalable enterprises.
                 </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>
-                      Operating with rigor across applicable laws, regulatory
-                      requirements, and professional standards
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>
-                      Guided by a long-term view of value creation, balancing the
-                      interests of founders, investors, and teams
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#CDAA80] font-bold text-xl mt-1">•</span>
-                    <span>
-                      Focused on delivering tangible, measurable, and attributable
-                      impact
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
+            </FadeIn>
+
+            {/* IMAGE */}
+            <FadeIn delay={0.2}>
+            <div className="relative h-[280px] sm:h-[360px] md:h-[420px] w-full">
+              <Image
+                src="/Philosophy.jpeg"
+                alt="Advisory discussion"
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+            </FadeIn>
 
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#0F1E3F] text-white py-12 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
-            Ready to grow your enterprise?
+      {/* WHAT WE DO */}
+      <section className="py-16 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <FadeIn>
+          <div className="max-w-3xl mb-12 md:mb-16">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0F1E3F] tracking-tight mb-5 md:mb-6">
+              What We Do
+            </h2>
+            <div className="h-[2px] w-16 bg-[#CDAA80]" />
+          </div>
+          </FadeIn>
+
+          <div className="grid md:grid-cols-3 gap-10 md:gap-16">
+
+            {[
+              {
+                title: "Investment Banking",
+                desc: "Advisory across mergers, acquisitions, capital structuring, and strategic transactions."
+              },
+              {
+                title: "Capital Raising",
+                desc: "Equity, debt, and alternative capital sourcing aligned to long-term enterprise value."
+              },
+              {
+                title: "Corporate Advisory",
+                desc: "Institutional governance, growth strategy, and transformation execution support."
+              }
+            ].map((item, i) => (
+              <FadeIn key={i} delay={i *0.15}>
+              <div key={i} className="space-y-4 md:space-y-6">
+                <h3 className="font-heading text-xl sm:text-2xl font-semibold text-[#0F1E3F] tracking-tight">
+                  {item.title}
+                </h3>
+                <p className="text-[#1A1A1A] leading-relaxed max-w-sm">
+                  {item.desc}
+                </p>
+              </div>
+              </FadeIn>
+            ))}
+
+          </div>
+        </div>
+      </section>
+
+      {/* PRINCIPLES */}
+      <section className="bg-[#F8F6F2] py-16 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <FadeIn>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0F1E3F] tracking-tight mb-8 md:mb-10">
+            Built on Trust and Discipline
           </h2>
-          <p className="text-gray-300 text-sm md:text-base mb-6 md:mb-8">
-            Let's explore how we can partner with you to unlock long-term value.
+          </FadeIn>
+           <FadeIn delay={0.1}>
+          <p className="text-[#1A1A1A] leading-relaxed mb-10 md:mb-14">
+            Trust is not assumed — it is earned and protected through ethical conduct,
+            regulatory rigor, and long-term accountability.
           </p>
+          </FadeIn>
+
+          <div className="space-y-8 md:space-y-10">
+            {[
+              "Operating with rigor across applicable laws and regulatory frameworks.",
+              "Balancing the interests of founders, investors, and institutions through long-term alignment.",
+              "Delivering tangible, measurable, and attributable outcomes."
+            ].map((item, index) => (
+              <FadeIn key={index} delay={index *0.15}>
+              <div key={index} className="border-t border-[#E5E2DC] pt-5 md:pt-6">
+                <p className="text-[#1A1A1A] leading-relaxed">
+                  {item}
+                </p>
+              </div>
+              </FadeIn>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#0F1E3F] text-white py-16 md:py-24">
+        <FadeIn>
+        <div className="max-w-3xl mx-auto text-center px-6">
+
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-5 md:mb-6">
+            Partner With Us
+          </h2>
+
+          <p className="text-gray-300 mb-8 md:mb-10">
+            Let’s explore how disciplined capital and structured advisory
+            can accelerate your next phase of growth.
+          </p>
+
           <Link
             href="/contact"
-            className="inline-block px-6 md:px-8 py-2.5 md:py-3 bg-[#CDAA80] text-[#0F1E3F] font-medium text-sm md:text-base hover:bg-[#997953] transition-colors"
+            className="inline-block px-8 py-3 bg-[#CDAA80] text-[#0F1E3F] font-medium hover:bg-[#997953] transition-colors"
           >
-            Start a Conversation
+            Initiate Discussion
           </Link>
+
         </div>
+        </FadeIn>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#1A1A1A] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12 mb-8">
-            <div>
-              <h3 className="font-heading text-lg md:text-xl font-bold mb-4">Unity Wealth Solutions</h3>
-              <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-                India-focused investment banking and corporate advisory firm.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-medium text-sm md:text-base mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-xs md:text-sm text-gray-400">
-                <li><Link href="/about" className="hover:text-[#CDAA80] transition-colors">About Us</Link></li>
-                <li><Link href="/services" className="hover:text-[#CDAA80] transition-colors">Services</Link></li>
-                <li><Link href="/philosophy" className="hover:text-[#CDAA80] transition-colors">Philosophy</Link></li>
-                <li><Link href="/team" className="hover:text-[#CDAA80] transition-colors">Team</Link></li>
-                <li><Link href="/contact" className="hover:text-[#CDAA80] transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium text-sm md:text-base mb-4">Contact</h4>
-              <p className="text-gray-400 text-xs md:text-sm">
-                <a href="mailto:info@unitywealthsolutions.com" className="hover:text-[#CDAA80] transition-colors">
-                  info@unitywealthsolutions.com
-                </a>
-
-                <a href="tel:+917977372974" className="block hover:text-[#CDAA80] transition-colors">
-                  +91 79773 72974
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-[#213A56] pt-8">
-            <p className="text-center text-gray-500 text-xs md:text-sm">
-              © 2026 Unity Wealth Solutions. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
